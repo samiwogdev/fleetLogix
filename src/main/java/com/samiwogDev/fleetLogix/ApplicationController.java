@@ -6,8 +6,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ApplicationController {
 
-	@GetMapping("/home")
-	public String home() {
-		return "pages-faq";
+	@GetMapping("/_layout")
+	public String _layout() {
+		return "_layout";
+	}
+	
+	@GetMapping("/index2")
+	public String index2() {
+		return "index2";
 	}
 }
