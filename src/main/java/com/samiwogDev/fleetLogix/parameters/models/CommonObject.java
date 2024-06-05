@@ -1,6 +1,5 @@
 package com.samiwogDev.fleetLogix.parameters.models;
 
-import com.samiwogDev.fleetLogix.security.models.Auditable;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.GeneratedValue;
@@ -14,7 +13,7 @@ import lombok.Setter;
 @Getter
 @MappedSuperclass
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class CommonObject extends Auditable<String> {
+public class CommonObject  {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
